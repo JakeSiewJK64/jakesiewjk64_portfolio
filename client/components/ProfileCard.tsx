@@ -24,9 +24,11 @@ const ProfileCard = async () => {
         className="rounded-[50%] mb-8"
         alt="profile"
       />
-      <p className="text-xl font-bold uppercase">{profile.name}</p>
-      <p>{profile.login}</p>
-      <div className="flex flex-row gap-2">
+      <div className="text-center">
+        <p className="text-xl font-bold uppercase">{profile.name}</p>
+        <p>{profile.login}</p>
+      </div>
+      <div className="flex flex-row gap-2 mt-4 justify-center">
         <CopyToClipboard icon={<MailIcon />} value={profile.email} />
         <Link
           className={buttonVariants({ variant: "outline", size: "icon" })}
