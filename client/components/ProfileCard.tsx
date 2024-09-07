@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { BsGithub } from "react-icons/bs";
+import { MailIcon } from "lucide-react";
+import { LiaLinkedin } from "react-icons/lia";
 import { useFetchGithubProfile } from "@/tools/github";
+import { Button, buttonVariants } from "./ui/button";
 import CopyToClipboard from "./ui/custom/CopyToClipboard";
+import Link from "next/link";
 
 const ProfileCard = async () => {
   const profile = await useFetchGithubProfile();
@@ -20,7 +25,21 @@ const ProfileCard = async () => {
       />
       <p className="text-xl font-bold uppercase">{profile.name}</p>
       <p>{profile.login}</p>
-      <CopyToClipboard value={profile.email} />
+      <div className="flex flex-row gap-2">
+        <CopyToClipboard icon={<MailIcon />} value={profile.email} />
+        <Link
+          className={buttonVariants({ variant: "outline", size: "icon" })}
+          href={profile.html_url}
+        >
+          <BsGithub size={20} />
+        </Link>
+        <Link
+          className={buttonVariants({ variant: "outline", size: "icon" })}
+          href={profile.blog}
+        >
+          <LiaLinkedin size={20} />
+        </Link>
+      </div>
     </div>
   );
 };

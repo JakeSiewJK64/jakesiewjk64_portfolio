@@ -1,10 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { Button } from "../button";
 import { CheckIcon, CopyIcon } from "lucide-react";
 
-const CopyToClipboard = ({ value }: { value: string }) => {
+const CopyToClipboard = ({
+  value,
+  icon = <CopyIcon className="size-4" />,
+}: {
+  value: string;
+  icon?: ReactNode;
+}) => {
   const [clicked, setClicked] = useState(false);
 
   useEffect(() => {
@@ -24,11 +30,7 @@ const CopyToClipboard = ({ value }: { value: string }) => {
         setClicked(true);
       }}
     >
-      {clicked ? (
-        <CheckIcon color="green" className="size-4" />
-      ) : (
-        <CopyIcon className="size-4" />
-      )}
+      {clicked ? <CheckIcon color="green" className="size-4" /> : icon}
     </Button>
   );
 };
