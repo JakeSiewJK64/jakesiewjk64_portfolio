@@ -3,7 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { MailIcon } from "lucide-react";
 import { LiaLinkedin } from "react-icons/lia";
 import { useFetchGithubProfile } from "@/tools/github";
-import { Button, buttonVariants } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import CopyToClipboard from "./ui/custom/CopyToClipboard";
 import Link from "next/link";
 
