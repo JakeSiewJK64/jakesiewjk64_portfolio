@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useFetchGithubProfile } from "@/tools/github";
-import CopyToClipboard from "./CopyToClipboard";
+import CopyToClipboard from "./ui/custom/CopyToClipboard";
 
 const ProfileCard = async () => {
   const profile = await useFetchGithubProfile();
@@ -9,10 +9,8 @@ const ProfileCard = async () => {
     return null;
   }
 
-  console.log(profile);
-
   return (
-    <div className="border border-lightgray-500 p-2 rounded-sm">
+    <div className="border border-lightgray-500 p-6 rounded-sm">
       <Image
         src={profile.avatar_url}
         width={150}
@@ -20,9 +18,9 @@ const ProfileCard = async () => {
         className="rounded-[50%] mb-8"
         alt="profile"
       />
-      <p className="text-xl font-bold">{profile.name}</p>
+      <p className="text-xl font-bold uppercase">{profile.name}</p>
       <p>{profile.login}</p>
-      <CopyToClipboard label="Copy Email" value={profile.email} />
+      <CopyToClipboard value={profile.email} />
     </div>
   );
 };
