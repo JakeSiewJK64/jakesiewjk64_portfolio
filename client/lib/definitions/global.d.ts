@@ -3,4 +3,6 @@ export type Profile = {
   name: string;
   avatar_url: string;
   email: string;
+  html_url: string;
+  blog: string;
 };
