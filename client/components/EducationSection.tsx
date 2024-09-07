@@ -10,7 +10,7 @@ const EducationSection = async () => {
   }
 
   return (
-    <div className="mb-4 border border-lightgray-500 rounded-sm p-6">
+    <div id="education" className="mb-4 border border-lightgray-500 rounded-sm p-6">
       <p className="text-xl font-bold">Education</p>
       {education.map((item) => (
         <div

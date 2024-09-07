@@ -16,7 +16,10 @@ const WorkExperienceSection = async () => {
   if (!experiences) return null;
 
   return (
-    <div className="border border-lightgray-500 rounded-sm p-6 mb-4">
+    <div
+      id="work_experience"
+      className="border border-lightgray-500 rounded-sm p-6 mb-4"
+    >
       <p className="text-xl font-bold">Work Experience</p>
       {experiences.map((experience) => (
         <Timeline key={experience.start_date}>
