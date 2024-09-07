@@ -6,6 +6,7 @@ import { LiaLinkedin } from "react-icons/lia";
 import { useFetchGithubProfile } from "@/tools/github";
 import { buttonVariants } from "./ui/button";
 import CopyToClipboard from "./ui/custom/CopyToClipboard";
+import BarcodeComponent from "./ui/custom/BarcodeComponent";
 
 const ProfileCard = async () => {
   const profile = await useFetchGithubProfile();
@@ -40,6 +41,7 @@ const ProfileCard = async () => {
           <LiaLinkedin size={20} />
         </Link>
       </div>
+      <BarcodeComponent value={String(profile.id)} />
     </div>
   );
 };
