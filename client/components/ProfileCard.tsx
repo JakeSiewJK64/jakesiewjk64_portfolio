@@ -7,6 +7,7 @@ import { useFetchGithubProfile } from "@/tools/github";
 import { buttonVariants } from "./ui/button";
 import CopyToClipboard from "./ui/custom/CopyToClipboard";
 import BarcodeComponent from "./ui/custom/BarcodeComponent";
+import QrComponent from "./ProfileURLQR";
 
 const ProfileCard = async () => {
   const profile = await useFetchGithubProfile();
@@ -20,11 +21,12 @@ const ProfileCard = async () => {
       <div className="w-14 mb-4 h-2 bg-black rounded-sm" />
       <Image
         src={profile.avatar_url}
-        width={150}
-        height={150}
-        className="rounded-[50%] mb-8"
+        width={120}
+        height={120}
+        className="rounded-[50%]"
         alt="profile"
       />
+      <QrComponent />
       <div className="text-center">
         <p className="text-xl font-bold uppercase">{profile.name}</p>
         <p>{profile.login}</p>
