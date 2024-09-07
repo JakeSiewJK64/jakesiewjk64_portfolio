@@ -1,11 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
 import { MailIcon } from "lucide-react";
 import { LiaLinkedin } from "react-icons/lia";
 import { useFetchGithubProfile } from "@/tools/github";
 import { buttonVariants } from "./ui/button";
 import CopyToClipboard from "./ui/custom/CopyToClipboard";
-import Link from "next/link";
 
 const ProfileCard = async () => {
   const profile = await useFetchGithubProfile();
