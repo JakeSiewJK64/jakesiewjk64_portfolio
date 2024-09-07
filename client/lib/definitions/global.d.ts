@@ -17,3 +17,10 @@ export type WorkExperience = {
   location: string;
   description: string;
 };
+
+export type PersonalProject = {
+  title: string;
+  tags: string;
+  date: string;
+  url: string;
+};

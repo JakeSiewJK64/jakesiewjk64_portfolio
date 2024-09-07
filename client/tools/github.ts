@@ -1,4 +1,8 @@
-import { Profile, WorkExperience } from "@/lib/definitions/global";
+import {
+  PersonalProject,
+  Profile,
+  WorkExperience,
+} from "@/lib/definitions/global";
 import axios from "axios";
 
 const axiosInstance = axios.create({
@@ -21,6 +25,14 @@ export const useFetchGithubProfile = async () => {
 export const useFetchWorkExperience = async () => {
   try {
     const res = await axiosInstance<WorkExperience[]>("/workExperience.json");
+
+    return res.data;
+  } catch (error) {}
+};
+
+export const useFetchPersonalProjects = async () => {
+  try {
+    const res = await axiosInstance<PersonalProject[]>("/personalProject.json");
 
     return res.data;
   } catch (error) {}
