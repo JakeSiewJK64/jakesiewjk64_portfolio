@@ -1,0 +1,38 @@
+[
+  {
+    "company": "Kakitangan.com",
+    "start_date": "2023-08",
+    "end_date": null,
+    "position": "Frontend Engineer",
+    "tags": ["react", "react-native"],
+    "location": "remote",
+    "description": "something"
+  },
+  {
+    "company": "Deloitte",
+    "start_date": "2023-01",
+    "end_date": "2023-04",
+    "position": "Intern SEA Risk Advisory",
+    "tags": ["OWASP"],
+    "location": "remote/on-site",
+    "description": "something"
+  },
+  {
+    "company": "Alihealth Sdn. Bhd",
+    "start_date": "2021-04",
+    "end_date": "2021-07",
+    "position": "Intern SEA Risk Advisory",
+    "tags": ["c#", "angular/cli"],
+    "location": "remote/on-site",
+    "description": "something"
+  },
+  {
+    "company": "AiButler",
+    "start_date": "2020-01",
+    "end_date": "2020-04",
+    "position": "Intern Android App Developer",
+    "tags": ["java"],
+    "location": "remote/on-site",
+    "description": "something"
+  }
+]
