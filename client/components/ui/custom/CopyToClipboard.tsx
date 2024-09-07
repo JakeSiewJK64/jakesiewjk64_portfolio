@@ -23,6 +23,7 @@ const CopyToClipboard = ({
 
   return (
     <Button
+      title={`Copy ${value}`}
       size="icon"
       variant="outline"
       onClick={() => {
