@@ -5,4 +5,5 @@ export type Profile = {
   email: string;
   html_url: string;
   blog: string;
+  id: number;
 };
