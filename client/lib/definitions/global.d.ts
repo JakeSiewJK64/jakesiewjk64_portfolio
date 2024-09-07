@@ -7,3 +7,13 @@ export type Profile = {
   blog: string;
   id: number;
 };
+
+export type WorkExperience = {
+  company: string;
+  start_date: string;
+  end_date: string;
+  position: string;
+  tags: string;
+  location: string;
+  description: string;
+};
