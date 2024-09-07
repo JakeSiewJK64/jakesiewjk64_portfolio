@@ -11,11 +11,11 @@ const ProjectsSection = async () => {
   }
 
   return (
-    <>
+    <div className="border border-lightgray-500 rounded-sm p-6 mb-4">
       <p className="text-xl font-bold">Projects</p>
       {projects.map((project) => (
         <div
-          className="flex flex-col rounded-sm border-gray-200 my-1 border p-2"
+          className="flex flex-col my-1 py-2"
           key={project.title}
         >
           <p>
@@ -43,7 +43,7 @@ const ProjectsSection = async () => {
           </Link>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

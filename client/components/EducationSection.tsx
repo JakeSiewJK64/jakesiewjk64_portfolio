@@ -10,11 +10,11 @@ const EducationSection = async () => {
   }
 
   return (
-    <div className="mb-4">
+    <div className="mb-4 border border-lightgray-500 rounded-sm p-6">
       <p className="text-xl font-bold">Education</p>
       {education.map((item) => (
         <div
-          className="flex flex-col rounded-sm border-gray-200 my-1 border p-2"
+          className="flex flex-col my-1 p-2"
           key={item.title}
         >
           <div className="flex flex-row justify-between">
