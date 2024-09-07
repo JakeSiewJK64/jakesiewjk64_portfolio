@@ -16,13 +16,13 @@ const ProfileCard = async () => {
   }
 
   return (
-    <div className="border border-lightgray-500 p-6 rounded-sm">
-      <div className="w-14 mx-auto mb-4 h-2 bg-black rounded-sm" />
+    <div className="border border-lightgray-500 p-6 rounded-sm flex flex-col items-center">
+      <div className="w-14 mb-4 h-2 bg-black rounded-sm" />
       <Image
         src={profile.avatar_url}
         width={150}
         height={150}
-        className="rounded-[50%] mb-8 mx-auto"
+        className="rounded-[50%] mb-8"
         alt="profile"
       />
       <div className="text-center">
