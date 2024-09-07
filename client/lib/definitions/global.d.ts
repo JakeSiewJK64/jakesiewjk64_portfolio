@@ -13,7 +13,7 @@ export type WorkExperience = {
   start_date: string;
   end_date: string;
   position: string;
-  tags: string;
+  tags: string[];
   location: string;
   description: string;
 };
