@@ -1,4 +1,5 @@
 import {
+  Education,
   PersonalProject,
   Profile,
   WorkExperience,
@@ -33,6 +34,14 @@ export const useFetchWorkExperience = async () => {
 export const useFetchPersonalProjects = async () => {
   try {
     const res = await axiosInstance<PersonalProject[]>("/personalProject.json");
+
+    return res.data;
+  } catch (error) {}
+};
+
+export const useFetchEducation = async () => {
+  try {
+    const res = await axiosInstance<Education[]>("/education.json");
 
     return res.data;
   } catch (error) {}

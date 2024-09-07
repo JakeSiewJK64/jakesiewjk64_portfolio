@@ -24,3 +24,10 @@ export type PersonalProject = {
   date: string;
   url: string;
 };
+
+export type Education = {
+  title: string;
+  institute: string;
+  location: string;
+  link: string;
+};
