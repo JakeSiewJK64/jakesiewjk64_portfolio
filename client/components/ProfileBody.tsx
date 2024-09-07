@@ -4,7 +4,7 @@ import WorkExperienceSection from "./WorkExperienceSection";
 
 const ProfileBody = async () => {
   return (
-    <div className="overflow-y-auto w-[40rem]">
+    <div className="print:overflow-y-visible overflow-y-auto w-[40rem]">
       <WorkExperienceSection />
       <ProjectsSection />
       <EducationSection />
