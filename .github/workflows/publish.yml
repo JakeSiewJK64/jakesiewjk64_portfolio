@@ -27,6 +27,14 @@ jobs:
       - name: Build with Next.js 🏗️
         run: npx next build
         working-directory: ./client
+      
+      - name:  next export 🏗️
+        run: npx next export
+        working-directory: ./client
+    
+      - name: create .nojekyll 🏗️
+        run: touch ./out/.nojekyll
+        working-directory: ./client
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
