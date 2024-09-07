@@ -30,7 +30,7 @@ const EducationSection = async () => {
               Link
             </Link>
           </div>
-          <p>{item.location}</p>
+          <p>{item.institute}, {item.location}</p>
         </div>
       ))}
     </div>
