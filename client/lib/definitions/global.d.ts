@@ -20,13 +20,14 @@ export type WorkExperience = {
 
 export type PersonalProject = {
   title: string;
-  tags: string;
+  tags: string[];
   date: string;
   url: string;
 };
 
 export type Education = {
   title: string;
+  graduation_date: string;
   institute: string;
   location: string;
   link: string;
