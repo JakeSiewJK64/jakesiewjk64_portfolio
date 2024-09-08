@@ -5,3 +5,6 @@ this portfolio website is dynamic that it reads data stored in your JSON file. T
 ### Screenshots
 
 ![screenshot-1](./screenshots/screenshot-1.png)
+
+### Data Source
+You need to specify an endpoint to your data source to be rendered on the portfolio site. The environment variable for this is `JSON_DATA_ENDPOINT` which you can specify in a `.env` file or in Vercel.
