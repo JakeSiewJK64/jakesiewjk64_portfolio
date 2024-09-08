@@ -4,35 +4,48 @@
     "start_date": "2023-08",
     "end_date": null,
     "position": "Frontend Engineer",
-    "tags": ["react", "react-native"],
+    "tags": [
+      "react",
+      "react-native",
+      "django",
+      "tanstack-query",
+      "typescript",
+      "javascript",
+      "python",
+      "jest",
+      "react testing library",
+      "msw",
+      "docker",
+      "AWS"
+    ],
     "location": "remote",
-    "description": "something"
+    "description": "Mainly assist in frontend focused development with occasional backend intervention."
   },
   {
-    "company": "Deloitte",
+    "company": "Deloitte SEA",
     "start_date": "2023-01",
     "end_date": "2023-04",
     "position": "Intern SEA Risk Advisory",
-    "tags": ["OWASP"],
+    "tags": ["OWASP", "AWS-EC2", "Phishing Campaign"],
     "location": "remote/on-site",
-    "description": "something"
+    "description": "Assist in research of vulnerabilities, data aggregation, visualization and reporting of pentesting results."
   },
   {
     "company": "Alihealth Sdn. Bhd",
     "start_date": "2021-04",
     "end_date": "2021-07",
     "position": "Intern SEA Risk Advisory",
-    "tags": ["c#", "angular/cli"],
+    "tags": ["c#", "angular/cli", "typescript", ".NET"],
     "location": "remote/on-site",
-    "description": "something"
+    "description": "Assist in both frontend and backend development for Doctor2U shop, merchant portal and lab information system."
   },
   {
     "company": "AiButler",
     "start_date": "2020-01",
     "end_date": "2020-04",
     "position": "Intern Android App Developer",
-    "tags": ["java"],
+    "tags": ["java", "android"],
     "location": "remote/on-site",
-    "description": "something"
+    "description": "Assist in developing android app as a wrapper to web application."
   }
 ]
