@@ -7,8 +7,7 @@ import {
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL:
-    "https://raw.githubusercontent.com/JakeSiewJK64/jakesiewjk64_portfolio/master/data",
+  baseURL: process.env.JSON_DATA_ENDPOINT,
   timeout: 5000,
   headers: {
     "Content-Type": "application/json",
