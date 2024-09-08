@@ -26,7 +26,7 @@ const ProjectsSection = async () => {
             <strong>Date: </strong>
             {project.date}
           </p>
-          <div className="flex flex-row gap-1">
+          <div className="flex flex-row gap-2 flex-wrap">
             {project.tags.map((tag) => (
               <Badge key={tag}>{tag}</Badge>
             ))}

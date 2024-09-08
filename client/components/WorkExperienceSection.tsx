@@ -31,7 +31,7 @@ const WorkExperienceSection = async () => {
             </TimelineHeader>
             <TimelineContent>
               <p>{experience.start_date}</p>
-              <div className="flex flex-row gap-2">
+              <div className="flex flex-row gap-2 flex-wrap">
                 {experience.tags.map((tag) => (
                   <Badge key={tag}>{tag}</Badge>
                 ))}
