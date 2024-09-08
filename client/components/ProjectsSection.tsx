@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { useFetchPersonalProjects } from "@/tools/github";
-import { Badge } from "./ui/badge";
+import SkillBadges from "./SkillBadges";
 
 const ProjectsSection = async () => {
   const projects = await useFetchPersonalProjects();
@@ -27,9 +27,7 @@ const ProjectsSection = async () => {
                 {project.date}
               </p>
               <div className="flex flex-row gap-2 flex-wrap">
-                {project.tags.map((tag) => (
-                  <Badge key={tag}>{tag}</Badge>
-                ))}
+                <SkillBadges tags={project.tags} />
               </div>
               <Link
                 className={buttonVariants({

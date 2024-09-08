@@ -8,7 +8,7 @@ import {
   TimelineItem,
   TimelineTitle,
 } from "./ui/timeline/timeline";
-import { Badge } from "./ui/badge";
+import SkillBadges from "./SkillBadges";
 
 const WorkExperienceSection = async () => {
   const experiences = await useFetchWorkExperience();
@@ -20,9 +20,7 @@ const WorkExperienceSection = async () => {
     >
       <p className="text-xl font-bold">Work Experience</p>
       {!experiences ? (
-        <p>
-          No data detected. Please ensure your data source is valid.
-        </p>
+        <p>No data detected. Please ensure your data source is valid.</p>
       ) : (
         <>
           {experiences.map((experience) => (
@@ -35,11 +33,7 @@ const WorkExperienceSection = async () => {
                 </TimelineHeader>
                 <TimelineContent>
                   <p>{experience.start_date}</p>
-                  <div className="flex flex-row gap-2 flex-wrap">
-                    {experience.tags.map((tag) => (
-                      <Badge key={tag}>{tag}</Badge>
-                    ))}
-                  </div>
+                  <SkillBadges tags={experience.tags} />
                   <p>{experience.description}</p>
                 </TimelineContent>
               </TimelineItem>
